@@ -8,7 +8,7 @@ LABEL repository="https://github.com/ecampidoglio/auto-release-milestone"
 LABEL maintainer="Enrico Campidoglio"
 
 RUN apt-get update && apt-get install -y jq
-RUN dotnet tool install -g GitReleaseManager.Tool
+RUN dotnet tool install --global GitReleaseManager.Tool --version 0.10.3
 
 ENV PATH /root/.dotnet/tools:$PATH
 
